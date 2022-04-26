@@ -42,6 +42,9 @@ def start_game():
         except ValueError as e:
             print(f'Invalid Value ({e})')
         else:
+            #Checks if current guess matches the random hidden number.
+            #Then hints the user if that guess is either HIGHER or LOWER than the hidden number.
+            #Then prompts user if they want to play again
             if guess > hidden_number:
                 print('Your guess is HIGHER than the current random number')
                 tries += 1
